@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album - ARCLIGHT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="album-header">
+        <div class="container">
+            <h1 id="album-title">Loading...</h1>
+            <p id="album-description"></p>
+            <a href="index.html#photography" class="back-link">&larr; Back to Portfolio</a>
+        </div>
+    </header>
+
+    <main class="album-grid-container">
+        <div class="container">
+            <div class="album-grid" id="album-grid">
+                </div>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <span class="lightbox-prev">&#10094;</span>
+            <span class="lightbox-next">&#10095;</span>
+            <img src="" alt="Lightbox Image" id="lightbox-img">
+            <h3 id="lightbox-caption"></h3>
+        </div>
+    </div>
+
+    <div id="video-lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <div class="video-container" id="video-container"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
