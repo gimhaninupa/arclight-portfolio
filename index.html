@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCLIGHT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo"><img src="Homepage Images/ARCLIGHT Logo.png" alt="ARCLIGHT Logo"></a>
+
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#photography">Photography</a></li>
+                    <!-- <li><a href="#videography">Videography</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>TURNING MOMENTS INTO <span>MASTERPIECES</span></h1>
+                <div class="hero-buttons">
+                    <a href="#photography" class="btn btn-secondary">View Portfolio</a>
+                    <!-- <a href="#videography" class="btn btn-primary">View Videography</a> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Our Team</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="Homepage Images/Team.jpg" alt="ARCLIGHT Team">
+                    </div>
+                    <div class="about-text">
+                        <p>At ARCLIGHT, we’re more than just photographers and videographers — we’re a close-knit crew
+                            bound by passion, creativity, and a shared vision for storytelling. Each of us brings
+                            something unique to the table, from artistic direction to technical precision, blending our
+                            talents to craft visual stories that resonate.</p>
+                        <p>Together, we work with energy, laughter, and dedication, making every shoot an experience
+                            filled with collaboration and creativity. Whether it’s capturing a fleeting moment, crafting
+                            cinematic visuals, or perfecting every tiny detail, we’re united by one goal — to turn your
+                            memories into art that lasts forever.</p>
+                        <p>We’re the faces behind the lens, the dreamers behind the light — we’re the <strong>ARCLIGHT
+                                Crew.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section alt-bg">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="Icons/Wedding Photography.gif" alt="Wedding Photography">
+                        </div>
+                        <h3>Wedding Photography</h3>
+                        <p>Capturing every moment of your big day, from the ceremony to the reception, with cinematic
+                            and candid shots.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="Icons/Wedding Videography.gif" alt="Wedding Videography">
+                        </div>
+                        <h3>Wedding Videography</h3>
+                        <p>A beautifully edited, cinematic film of your wedding that tells the story of your love and
+                            celebration.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="Icons/Birthday.gif" alt="Birthdays & Events">
+                        </div>
+                        <h3>Birthdays & Events</h3>
+                        <p>Dynamic coverage for birthdays, parties, anniversaries, and any special event you want to
+                            remember.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="Icons/Graduation.gif" alt="Graduations">
+                        </div>
+                        <h3>Graduations</h3>
+                        <p>Professional portraits and event coverage to celebrate your academic milestone.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="Icons/Coparate.gif" alt="Corporate Events">
+                        </div>
+                        <h3>Corporate Events</h3>
+                        <p>Reliable and professional photo/video services for conferences, summits, and company
+                            functions.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="Icons/Portraits.gif" alt="Portrait Shoots">
+                        </div>
+                        <h3>Portrait Shoots</h3>
+                        <p>Creative and personal photoshoots for individuals, couples, and families.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="photography" class="portfolio-section">
+            <div class="container">
+                <h2>Photography</h2>
+                <div class="filter-bar" id="photo-filter-bar">
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="wedding">Weddings</button>
+                    <button data-filter="graduation">Graduations</button>
+                    <button data-filter="event">Events</button>
+                    <button data-filter="birthday">Birthdays</button>
+                </div>
+
+                <div class="portfolio-grid">
+
+                    <a href="album.html?id=shehan-graduation" class="portfolio-item" data-category="graduation">
+                        <img src="Photography/Albums/Graduations/Shehan and Shehani's Graduation/1.jpg"
+                            alt="Shehan and Shehani's Graduation">
+                        <div class="item-overlay">
+                            <h3>Shehan and Shehani's Graduation</h3>
+                        </div>
+                    </a>
+
+                    <a href="album.html?id=ai-driven" class="portfolio-item" data-category="event">
+                        <img src="Photography/Albums/Events/AI Driven/1.jpg" alt="AI Driven Event">
+                        alt="AI Driven">
+                        <div class="item-overlay">
+                            <h3>AI Driven Sri Lanka</h3>
+                        </div>
+                    </a>
+
+                    <a href="album.html?id=after-glow" class="portfolio-item" data-category="event">
+                        <img src="Photography/Albums/Events/After Glow/1.jpg" alt="After Glow Event">
+                        <div class="item-overlay">
+                            <h3>After Glow</h3>
+                        </div>
+                    </a>
+
+                    <a href="album.html?id=echoes-of-holi" class="portfolio-item" data-category="event">
+                        <img src="Photography/Albums/Events/Echoes of Holi/1.jpg" alt="After Glow Event">
+                        <div class="item-overlay">
+                            <h3>Echoes Of Holi</h3>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!--<section id="videography" class="portfolio-section alt-bg">
+            <div class="container">
+                <h2>Videography</h2>
+
+                <div class="filter-bar" id="video-filter-bar">
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="reels">Reels</button>
+                    <button data-filter="weddings">Weddings</button>
+                </div>
+
+                <div class="portfolio-grid" id="main-video-grid">
+                </div>
+            </div>
+        </section> -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+
+                <h2 class="section-title">Contact Us</h2>
+
+                <div class="contact-content">
+
+                    <div class="contact-form-wrapper">
+                        <h3 class="contact-subheading">Get in touch</h3>
+                        <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit"
+                            method="POST">
+
+                            <input type="hidden" name="access_key" value="dd7f7963-c5a0-4e2a-88a3-f00c807ce9c7">
+
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3 class="contact-subheading">Contact Details</h3>
+                        <p>For enquiries and bookings, please contact ARCLIGHT directly via email or connect with us on
+                            social media.</p>
+
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp-square"></i>
+                            <span>+94 70 550 4571</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>dm.arclight@gmail.com</span>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/company/arclightsl/" target="_blank" title="LinkedIn"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/share/17V3k47B5C/?mibextid=wwXIfr" target="_blank"
+                                title="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/arclight.sl?igsh=MnFhcm5jOTA1ZGs0&utm_source=qr"
+                                target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ARCLIGHT. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="video-lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <div class="video-container" id="video-container"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
