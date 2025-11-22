@@ -14,19 +14,7 @@ const photoAlbumData = {
         description: "An inspiring showcase of how artificial intelligence is transforming modern business strategies, innovation, and collaboration in the corporate world.",
         basePath: "Photography/Albums/Events/AI Driven/",
         imageCount: 20
-    },
-    "after-glow": {
-        title: "After Glow",
-        description: "Vibrant shots from the 'After Glow' music event, capturing the energy and atmosphere of the night.",
-        basePath: "Photography/Albums/Events/After Glow/",
-        imageCount: 20
-    },
-    "echoes-of-holi": {
-        title: "Echoes Of Holi",
-        description: "Vibrant shots from the 'After Glow' music event, capturing the energy and atmosphere of the night.",
-        basePath: "Photography/Albums/Events/Echoes of Holi/",
-        imageCount: 32
-    },
+    }
 
 };
 
