@@ -3,6 +3,13 @@
 //=====================================================================
 
 const photoAlbumData = {
+
+    "anne's-batch-photo-day": {
+        title: "Anne's Batch Photo Day",
+        description: "A collection of portraits capturing Anne on her special photo day.",
+        basePath: "Photography/Albums/Events/Anne's Batch Photo Day/",
+        imageCount: 17
+    },
     "shehan-graduation": {
         title: "Shehan & Shehani's Graduation",
         description: "A collection of portraits celebrating Shehan and Shehani's academic milestone.",
