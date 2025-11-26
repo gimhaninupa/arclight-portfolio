@@ -4,7 +4,7 @@
 
 const photoAlbumData = {
 
-   "annes-batch": {
+    "annes-batch": {
         title: "Anne's Batch Photo Day",
         description: "A collection of portraits capturing Anne on her special photo day.",
         basePath: "Photography/Albums/Events/Anne's Batch Photo Day/",
@@ -21,6 +21,12 @@ const photoAlbumData = {
         description: "An inspiring showcase of how artificial intelligence is transforming modern business strategies, innovation, and collaboration in the corporate world.",
         basePath: "Photography/Albums/Events/AI Driven/",
         imageCount: 20
+    },
+    "kaushalya-graduation": {
+        title: "Kaushalya's Graduation",
+        description: "A collection of portraits celebrating Kaushalya's academic milestone.",
+        basePath: "Photography/Albums/Graduations/Kaushalya's Graduation/",
+        imageCount: 25
     }
 
 };
