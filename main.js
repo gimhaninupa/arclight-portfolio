@@ -4,29 +4,29 @@
 
 const photoAlbumData = {
 
+    "kaushalya-graduation": {
+        title: "Kaushalya's Graduation",
+        description: "A curated collection of beautifully captured portraits and landscape shots celebrating Kaushalya’s remarkable academic milestone.",
+        basePath: "Photography/Albums/Graduations/Kaushalya's Graduation/",
+        imageCount: 25
+    },
+    "tharuka-graduation": {
+        title: "Tharuka's Graduation",
+        description: "A curated collection of beautifully captured portraits and landscape shots celebrating Tharuka’s remarkable academic milestone.",
+        basePath: "Photography/Albums/Graduations/Tharuka's Graduation/",
+        imageCount: 31
+    },
     "annes-batch": {
         title: "Anne's Batch Photo Day",
         description: "A collection of portraits capturing Anne on her special photo day.",
         basePath: "Photography/Albums/Events/Anne's Batch Photo Day/",
         imageCount: 17
     },
-    "shehan-graduation": {
-        title: "Shehan & Shehani's Graduation",
-        description: "A collection of portraits celebrating Shehan and Shehani's academic milestone.",
-        basePath: "Photography/Albums/Graduations/Shehan and Shehani's Graduation/",
-        imageCount: 20
-    },
     "ai-driven": {
         title: "AI Driven",
         description: "An inspiring showcase of how artificial intelligence is transforming modern business strategies, innovation, and collaboration in the corporate world.",
         basePath: "Photography/Albums/Events/AI Driven/",
         imageCount: 20
-    },
-    "kaushalya-graduation": {
-        title: "Kaushalya's Graduation",
-        description: "A collection of portraits celebrating Kaushalya's academic milestone.",
-        basePath: "Photography/Albums/Graduations/Kaushalya's Graduation/",
-        imageCount: 25
     }
 
 };
