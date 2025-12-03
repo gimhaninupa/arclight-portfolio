@@ -16,6 +16,12 @@ const photoAlbumData = {
         basePath: "Photography/Albums/Graduations/Tharuka's Graduation/",
         imageCount: 31
     },
+    "rasari-graduation": {
+        title: "Rasari's Graduation",
+        description: "A curated collection of beautifully captured portraits and landscape shots celebrating Rasari’s remarkable academic milestone.",
+        basePath: "Photography/Albums/Graduations/Rasari's Graduation/",
+        imageCount: 32
+    },
     "annes-batch": {
         title: "Anne's Batch Photo Day",
         description: "A collection of portraits capturing Anne on her special photo day.",
