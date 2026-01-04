@@ -4,6 +4,12 @@
 
 const photoAlbumData = {
 
+    "virajith-samadhi-graduation": {
+        title: "Virajith & Samadhi's Graduation",
+        description: "A memorable graduation album capturing the proud moments, emotions, and celebrations of Virajith and Samadhi on their special day.",
+        basePath: "Photography/Albums/Graduations/Virajith & Samadhi's Graduation/",
+        imageCount: 25
+    },
     "kaushalya-graduation": {
         title: "Kaushalya's Graduation",
         description: "A curated collection of beautifully captured portraits and landscape shots celebrating Kaushalya’s remarkable academic milestone.",
