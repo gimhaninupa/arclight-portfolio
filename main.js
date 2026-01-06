@@ -31,7 +31,7 @@ const photoAlbumData = {
     "annes-batch": {
         title: "Anne's Batch Photo Day",
         description: "A collection of portraits capturing Anne on her special photo day.",
-        basePath: "Photography/Albums/Events/Anne's Batch Photo Day/",
+        basePath: "Photography/Albums/Graduations/Anne's Batch Photo Day/",
         imageCount: 17
     },
     "ai-driven": {
@@ -39,6 +39,33 @@ const photoAlbumData = {
         description: "An inspiring showcase of how artificial intelligence is transforming modern business strategies, innovation, and collaboration in the corporate world.",
         basePath: "Photography/Albums/Events/AI Driven/",
         imageCount: 20
+    },
+    "meghahara": {
+        title: "Meghahara",
+        description: "A vibrant cultural event capturing artistic expression, music, and unforgettable moments shared by the audience.",
+        basePath: "Photography/Albums/Events/Meghahara/",
+        imageCount: 18
+    },
+
+    "echoes-of-holi": {
+        title: "Echoes of Holi",
+        description: "A colorful celebration filled with joy, tradition, and unity, capturing the spirit of Holi through lively moments.",
+        basePath: "Photography/Albums/Events/Echoes of Holi/",
+        imageCount: 20
+    },
+
+    "convocation": {
+        title: "Convocation",
+        description: "A formal academic ceremony celebrating achievement, pride, and the beginning of new professional journeys.",
+        basePath: "Photography/Albums/Events/Convocation/",
+        imageCount: 22
+    },
+
+    "after-glow": {
+        title: "After Glow",
+        description: "An energetic post-event celebration capturing vibrant lights, music, and unforgettable nighttime moments.",
+        basePath: "Photography/Albums/Events/After Glow/",
+        imageCount: 28
     }
 
 };
@@ -50,27 +77,60 @@ const videoAlbumData = {
         description: "A collection of our latest short-form videos and event highlights.",
         videos: [
             {
-                title: "SLTC University",
-                cover: "Videography/Albums/Reels/SLTC/SLTC- Cover.png",
+                title: "Batch Photo day",
+                cover: "Videography/Batch Photo day/Batch Photo day.png",
                 type: "local",
-                path: "Videography/Albums/Reels/SLTC/SLTC.mp4",
-                category: "reels" // <-- Category for filter
-            },
-            {
-                title: "Megahara",
-                cover: "Videography/Albums/Reels/Megahara/Megahara Cover.png",
-                type: "local",
-                path: "Videography/Albums/Reels/Megahara/Megahara.mp4",
+                path: "Videography/Batch Photo day/Batch Photo day.mp4",
                 category: "reels" // <-- Category for filter
             },
 
             {
-                title: "After Glow",
-                cover: "Videography/Albums/Reels/AfterGlow/AfterGlow Cover.png",
+                title: "Codemania v5.0 2025",
+                cover: "Videography/Codemania v5.0 2025/Codemania v5.0 2025.png",
                 type: "local",
-                path: "Videography/Albums/Reels/AfterGlow/AfterGlow.mp4",
+                path: "Videography/Codemania v5.0 2025/Codemania v5.0 2025.mp4",
                 category: "reels" // <-- Category for filter
             },
+
+            {
+                title: "Lethal Bots 2025",
+                cover: "Videography/Lethal Bots 2025/Lethal Bots 2025.png",
+                type: "local",
+                path: "Videography/Lethal Bots 2025/Lethal Bots 2025.mp4",
+                category: "reels" // <-- Category for filter
+            },
+
+            {
+                title: "Meghahara 2025",
+                cover: "Videography/Meghahara 2025/Meghahara 2025.png",
+                type: "local",
+                path: "Videography/Meghahara 2025/Meghahara 2025.mp4",
+                category: "reels" // <-- Category for filter
+            },
+
+            {
+                title: "SLTC  convocatiom",
+                cover: "Videography/SLTC  convocatiom/SLTC  convocatiom.png",
+                type: "local",
+                path: "Videography/SLTC  convocatiom/SLTC  convocatiom.mp4",
+                category: "reels" // <-- Category for filter
+            },
+
+            {
+                title: "SLTC Research & Innovation Awards 2025",
+                cover: "Videography/SLTC Research & Innovation Awards 2025/SLTC Research & Innovation Awards 2025.png",
+                type: "local",
+                path: "Videography/SLTC Research & Innovation Awards 2025/SLTC Research & Innovation Awards 2025.mp4",
+                category: "reels" // <-- Category for filter
+            },
+
+            {
+                title: "SLTC Wasath Hiru Udanaya 2025",
+                cover: "Videography/SLTC Wasath Hiru Udanaya 2025/SLTC Wasath Hiru Udanaya 2025.png",
+                type: "local",
+                path: "Videography/SLTC Wasath Hiru Udanaya 2025/SLTC Wasath Hiru Udanaya 2025.mp4",
+                category: "reels" // <-- Category for filter
+            }
 
             // {
             // title: "Anya & Ben's Wedding",

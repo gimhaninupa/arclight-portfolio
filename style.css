@@ -377,7 +377,7 @@ a {
 }
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 .portfolio-item {
@@ -398,10 +398,10 @@ a {
     transform: scale(1.1);
 }
 #photography .portfolio-item {
-    aspect-ratio: 5 / 6; /* Makes photo cards slightly taller than wide */
+    aspect-ratio: 5/6; /* Makes photo cards slightly taller than wide */
 }
 #videography .portfolio-item {
-    aspect-ratio: 5 / 6; /* Makes video cards taller and narrower (portrait video style) */
+    aspect-ratio: 16/9; /* Makes video cards taller and narrower (portrait video style) */
 }
 .item-overlay {
     position: absolute;
