@@ -4,17 +4,35 @@
 
 const photoAlbumData = {
 
+    "virajith-samadhi-graduation": {
+        title: "Virajith & Samadhi's Graduation",
+        description: "A memorable graduation album capturing the proud moments, emotions, and celebrations of Virajith and Samadhi on their special day.",
+        basePath: "Photography/Albums/Graduations/Virajith & Samadhi's Graduation/",
+        imageCount: 25
+    },
+    "kaushalya-graduation": {
+        title: "Kaushalya's Graduation",
+        description: "A curated collection of beautifully captured portraits and landscape shots celebrating Kaushalya’s remarkable academic milestone.",
+        basePath: "Photography/Albums/Graduations/Kaushalya's Graduation/",
+        imageCount: 25
+    },
+    "tharuka-graduation": {
+        title: "Tharuka's Graduation",
+        description: "A curated collection of beautifully captured portraits and landscape shots celebrating Tharuka’s remarkable academic milestone.",
+        basePath: "Photography/Albums/Graduations/Tharuka's Graduation/",
+        imageCount: 31
+    },
+    "rasari-graduation": {
+        title: "Rasari's Graduation",
+        description: "A curated collection of beautifully captured portraits and landscape shots celebrating Rasari’s remarkable academic milestone.",
+        basePath: "Photography/Albums/Graduations/Rasari's Graduation/",
+        imageCount: 32
+    },
     "annes-batch": {
         title: "Anne's Batch Photo Day",
         description: "A collection of portraits capturing Anne on her special photo day.",
-        basePath: "Photography/Albums/Events/Anne's Batch Photo Day/",
+        basePath: "Photography/Albums/Graduations/Anne's Batch Photo Day/",
         imageCount: 17
-    },
-    "shehan-graduation": {
-        title: "Shehan & Shehani's Graduation",
-        description: "A collection of portraits celebrating Shehan and Shehani's academic milestone.",
-        basePath: "Photography/Albums/Graduations/Shehan and Shehani's Graduation/",
-        imageCount: 20
     },
     "ai-driven": {
         title: "AI Driven",
@@ -22,11 +40,32 @@ const photoAlbumData = {
         basePath: "Photography/Albums/Events/AI Driven/",
         imageCount: 20
     },
-    "kaushalya-graduation": {
-        title: "Kaushalya's Graduation",
-        description: "A collection of portraits celebrating Kaushalya's academic milestone.",
-        basePath: "Photography/Albums/Graduations/Kaushalya's Graduation/",
-        imageCount: 25
+    "meghahara": {
+        title: "Meghahara",
+        description: "A vibrant cultural event capturing artistic expression, music, and unforgettable moments shared by the audience.",
+        basePath: "Photography/Albums/Events/Meghahara/",
+        imageCount: 18
+    },
+
+    "echoes-of-holi": {
+        title: "Echoes of Holi",
+        description: "A colorful celebration filled with joy, tradition, and unity, capturing the spirit of Holi through lively moments.",
+        basePath: "Photography/Albums/Events/Echoes of Holi/",
+        imageCount: 20
+    },
+
+    "convocation": {
+        title: "Convocation",
+        description: "A formal academic ceremony celebrating achievement, pride, and the beginning of new professional journeys.",
+        basePath: "Photography/Albums/Events/Convocation/",
+        imageCount: 22
+    },
+
+    "after-glow": {
+        title: "After Glow",
+        description: "An energetic post-event celebration capturing vibrant lights, music, and unforgettable nighttime moments.",
+        basePath: "Photography/Albums/Events/After Glow/",
+        imageCount: 28
     }
 
 };
@@ -38,27 +77,60 @@ const videoAlbumData = {
         description: "A collection of our latest short-form videos and event highlights.",
         videos: [
             {
-                title: "SLTC University",
-                cover: "Videography/Albums/Reels/SLTC/SLTC- Cover.png",
+                title: "Batch Photo day",
+                cover: "Videography/Batch Photo day/Batch Photo day.png",
                 type: "local",
-                path: "Videography/Albums/Reels/SLTC/SLTC.mp4",
-                category: "reels" // <-- Category for filter
-            },
-            {
-                title: "Megahara",
-                cover: "Videography/Albums/Reels/Megahara/Megahara Cover.png",
-                type: "local",
-                path: "Videography/Albums/Reels/Megahara/Megahara.mp4",
+                path: "Videography/Batch Photo day/Batch Photo day.mp4",
                 category: "reels" // <-- Category for filter
             },
 
             {
-                title: "After Glow",
-                cover: "Videography/Albums/Reels/AfterGlow/AfterGlow Cover.png",
+                title: "Codemania v5.0 2025",
+                cover: "Videography/Codemania v5.0 2025/Codemania v5.0 2025.png",
                 type: "local",
-                path: "Videography/Albums/Reels/AfterGlow/AfterGlow.mp4",
+                path: "Videography/Codemania v5.0 2025/Codemania v5.0 2025.mp4",
                 category: "reels" // <-- Category for filter
             },
+
+            {
+                title: "Lethal Bots 2025",
+                cover: "Videography/Lethal Bots 2025/Lethal Bots 2025.png",
+                type: "local",
+                path: "Videography/Lethal Bots 2025/Lethal Bots 2025.mp4",
+                category: "reels" // <-- Category for filter
+            },
+
+            {
+                title: "Meghahara 2025",
+                cover: "Videography/Meghahara 2025/Meghahara 2025.png",
+                type: "local",
+                path: "Videography/Meghahara 2025/Meghahara 2025.mp4",
+                category: "reels" // <-- Category for filter
+            },
+
+            {
+                title: "SLTC  convocatiom",
+                cover: "Videography/SLTC  convocatiom/SLTC  convocatiom.png",
+                type: "local",
+                path: "Videography/SLTC  convocatiom/SLTC  convocatiom.mp4",
+                category: "reels" // <-- Category for filter
+            },
+
+            {
+                title: "SLTC Research & Innovation Awards 2025",
+                cover: "Videography/SLTC Research & Innovation Awards 2025/SLTC Research & Innovation Awards 2025.png",
+                type: "local",
+                path: "Videography/SLTC Research & Innovation Awards 2025/SLTC Research & Innovation Awards 2025.mp4",
+                category: "reels" // <-- Category for filter
+            },
+
+            {
+                title: "SLTC Wasath Hiru Udanaya 2025",
+                cover: "Videography/SLTC Wasath Hiru Udanaya 2025/SLTC Wasath Hiru Udanaya 2025.png",
+                type: "local",
+                path: "Videography/SLTC Wasath Hiru Udanaya 2025/SLTC Wasath Hiru Udanaya 2025.mp4",
+                category: "reels" // <-- Category for filter
+            }
 
             // {
             // title: "Anya & Ben's Wedding",
