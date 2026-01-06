@@ -77,7 +77,7 @@ const videoAlbumData = {
         description: "A collection of our latest short-form videos and event highlights.",
         videos: [
             {
-                title: "Batch Photo day",
+                title: "Batch Photo Day",
                 cover: "Videography/Batch Photo day/Batch Photo day.png",
                 type: "local",
                 path: "Videography/Batch Photo day/Batch Photo day.mp4",
@@ -109,7 +109,7 @@ const videoAlbumData = {
             },
 
             {
-                title: "SLTC  convocatiom",
+                title: "SLTC Convocatiom",
                 cover: "Videography/SLTC  convocatiom/SLTC  convocatiom.png",
                 type: "local",
                 path: "Videography/SLTC  convocatiom/SLTC  convocatiom.mp4",
