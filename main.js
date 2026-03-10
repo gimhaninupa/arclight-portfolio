@@ -40,6 +40,14 @@ const photoAlbumData = {
         basePath: "Photography/Albums/Events/AI Driven/",
         imageCount: 20
     },
+
+    "mathaka-handiya": {
+        title: "Mathaka Handiya",
+        description: "A soulful cultural journey capturing the rhythm of nostalgia, vibrant artistry, and the magic of a shared musical experience.",
+        basePath: "Photography/Albums/Events/Mathaka Handiya/",
+        imageCount: 41
+    },
+
     "meghahara": {
         title: "Meghahara",
         description: "A vibrant cultural event capturing artistic expression, music, and unforgettable moments shared by the audience.",
@@ -76,6 +84,14 @@ const videoAlbumData = {
         title: "Video Reels",
         description: "A collection of our latest short-form videos and event highlights.",
         videos: [
+            {
+                title: "Mathaka Handiya",
+                cover: "Videography/Mathaka Handiya/Mathaka Handiya.png",
+                type: "local",
+                path: "Videography/Mathaka Handiya/Mathaka Handiya.mp4",
+                category: "reels" // <-- Category for filter
+            },
+
             {
                 title: "Batch Photo Day",
                 cover: "Videography/Batch Photo day/Batch Photo day.png",
