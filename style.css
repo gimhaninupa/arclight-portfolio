@@ -8,11 +8,15 @@ html, body {
 :root {
     --color-primary: #ff7e00; /* Orange (Brand) */
     --color-secondary: #ff3000; /* Red-Orange (Brand) */
-    --color-bg: #f0f0f0;      /* Light background (was #111) */
-    --color-bg-alt: #ffffff;  /* White background (was #1a1a) */
-    --color-text: #000000;    /* Dark text (was #f0f0f0) */
-    --color-text-dark: #ffffff;  /* Light text for buttons (was #333) */
-    --font-primary: 'Poppins', sans-serif; /* <-- ADD THIS LINE */
+    --color-bg: #f4f6f9;      /* Light background */
+    --color-bg-alt: #eef1f5;  /* Slightly darker for contrast */
+    --color-text: #000000;    /* Dark text */
+    --color-text-dark: #ffffff;  /* Light text for buttons */
+    --glass-bg: rgba(255, 255, 255, 0.5);
+    --glass-border: rgba(255, 255, 255, 0.7);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+    --glass-blur: 10px;
+    --font-primary: 'Poppins', sans-serif;
 }
 
 * {
@@ -28,6 +32,11 @@ html {
 body {
     font-family: var(--font-primary);
     background-color: var(--color-bg);
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(255, 126, 0, 0.08), transparent 30%),
+        radial-gradient(circle at 85% 20%, rgba(255, 48, 0, 0.08), transparent 30%),
+        radial-gradient(circle at 50% 80%, rgba(255, 126, 0, 0.05), transparent 40%);
+    background-attachment: fixed;
     color: var(--color-text);
     line-height: 1.6;
     margin: 0;
@@ -55,7 +64,6 @@ p {
 
 section {
     padding: 80px 0;
-    border-top: 1px solid #000000; /* This adds the light gray separator line */
 }
 
 img {
@@ -104,13 +112,29 @@ a {
 .navbar {
     position: fixed;
     width: 100%;
+    max-width: 100%;
     top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.9); /* Light semi-transparent bg */
-    backdrop-filter: blur(10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
     z-index: 1000;
-    border-bottom: 1px solid #ddd; /* Light border */
-    margin: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--glass-border);
+    border-radius: 0;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.navbar.scrolled {
+    top: 20px;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 50px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.75); /* Slightly more opaque glass for the pill */
 }
 
 .navbar .container {
@@ -253,7 +277,7 @@ a {
 /* ======== About Section ======== */
 /* New corrected code */
 .about-section {
-    background-color: #ffffff; /* Light gray */
+    background-color: transparent; 
 }
 
 /* This targets the "About ARCLIGHT" heading */
@@ -317,18 +341,38 @@ a {
     color: transparent;
 }
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-top: 40px;
 }
 .service-item {
-    background-color: #ffffff; /* Light gray cards */
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: 35px 30px;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
-    border: 1px solid #000000; /* Light border */
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* Responsive Flexbox */
+    flex: 1 1 300px;
+    max-width: 100%;
+}
+
+@media (min-width: 670px) {
+    .service-item {
+        max-width: calc((100% - 30px) / 2);
+    }
+}
+
+@media (min-width: 1000px) {
+    .service-item {
+        max-width: calc((100% - 60px) / 3);
+    }
 }
 .service-item:hover {
     transform: translateY(-5px);
@@ -358,7 +402,7 @@ a {
 
 /* ======== Portfolio Section (Homepage) ======== */
 .portfolio-section {
-    background-color: #ffffff;
+    background-color: transparent;
 }
 .portfolio-section h2 {
     margin-bottom: 40px; /* Increases space below heading (was 20px) */
@@ -373,7 +417,7 @@ a {
     color: transparent;
 }
 .portfolio-section.alt-bg {
-    background-color: #ffffff;
+    background-color: transparent;
 }
 .portfolio-grid {
     display: grid;
@@ -382,20 +426,26 @@ a {
 }
 .portfolio-item {
     position: relative;
-    overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
     display: block;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 .portfolio-item img {
+    display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
 .portfolio-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 #photography .portfolio-item {
     aspect-ratio: 5/6; /* Makes photo cards slightly taller than wide */
@@ -450,8 +500,11 @@ a {
     font-size: 1rem;
     font-weight: 500;
     color: var(--color-text); /* Dark text */
-    background-color: var(--color-bg-alt); /* White */
-    border: 1px solid #ccc; /* Light border */
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -472,10 +525,9 @@ a {
 
 /* ======== Contact Section (NEW STYLES) ======== */
 .contact-section {
-    background-color: var(--color-bg-alt); /* White background */
-    border-top: 1px solid #000000; /* Light border */
+    background-color: var(--color-bg-alt);
     padding-top: 80px;
-    padding-bottom: 80px; /* Resets padding */
+    padding-bottom: 80px;
 }
 
 /* This centers the "Contact Us" heading */
@@ -555,16 +607,21 @@ a {
 .form-group textarea {
     width: 100%;
     padding: 12px 15px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border: 1px solid var(--glass-border);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
     color: var(--color-text);
     font-family: var(--font-primary);
+    transition: all 0.3s ease;
 }
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: var(--color-primary);
+    box-shadow: 0 0 10px rgba(255, 126, 0, 0.2);
 }
 
 /* --- New Info Column Styles --- */
@@ -620,12 +677,140 @@ a {
     border: 2px solid var(--color-primary);
 }
 
-/* ======== Footer ======== */
-footer {
-    padding: 30px 0;
-    background-color: var(--color-bg-alt); /* White */
-    text-align: center;
-    border-top: 1px solid #000000; /* Light border */
+/* ======== Comprehensive Footer Styles ======== */
+.site-footer {
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    box-shadow: 0 -8px 32px 0 rgba(0, 0, 0, 0.05); /* upward soft shadow */
+    padding: 70px 0 20px 0;
+    font-family: var(--font-primary);
+    border-top: 1px solid var(--glass-border);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-col h3 {
+    font-size: 1.2rem;
+    color: var(--color-primary); /* Orange heading */
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.brand-col p {
+    color: #556070; /* Grayish blue text */
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.links-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-col ul li {
+    margin-bottom: 15px;
+}
+
+.links-col ul li a {
+    color: #556070;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.links-col ul li a:hover {
+    color: var(--color-primary);
+}
+
+.social-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: rgba(255, 255, 255, 0.5); /* Glassy box */
+    color: var(--color-primary); /* Orange icon */
+    border-radius: 8px; /* Rounded squares */
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.footer-email {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #556070;
+}
+
+.footer-email i {
+    font-size: 1.2rem;
+}
+
+.footer-email a {
+    color: #556070;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-email a:hover {
+    color: var(--color-primary);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--glass-border);
+    padding-top: 25px;
+    text-align: left;
+}
+
+.footer-bottom p {
+    color: #7b8694;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-bottom {
+        text-align: center;
+    }
 }
 
 
@@ -637,7 +822,7 @@ footer {
 .album-header {
     padding: 100px 0 40px 0;
     text-align: center;
-    background-color: var(--color-bg-alt); /* White */
+    background-color: transparent; /* Show through body gradient */
 }
 .album-header h1 {
     font-size: 3rem;
@@ -671,7 +856,7 @@ footer {
 /* ======== Album Grid (Photos) ======== */
 .album-grid-container {
     padding: 60px 0;
-    background-color: #ffffff; /* Light gray */
+    background-color: transparent; /* Show through body gradient */
 }
 .album-grid {
     display: grid;
@@ -683,22 +868,27 @@ footer {
     overflow: hidden;
     border-radius: 8px;
     aspect-ratio: 1 / 1;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .album-photo img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
+.album-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
 .album-photo:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-/* ======== Album Grid (Videos) - Uses homepage .portfolio-grid styles ======== */
 .video-grid-container {
     padding: 60px 0;
-    background-color: var(--color-bg); /* Light gray */
+    background-color: transparent; /* Show through body gradient */
 }
 
 /* ======== PHOTO LIGHTBOX STYLES ======== */

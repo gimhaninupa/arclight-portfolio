@@ -6,72 +6,61 @@ const photoAlbumData = {
 
     "virajith-samadhi-graduation": {
         title: "Virajith & Samadhi's Graduation",
-        description: "A memorable graduation album capturing the proud moments, emotions, and celebrations of Virajith and Samadhi on their special day.",
         basePath: "Photography/Albums/Graduations/Virajith & Samadhi's Graduation/",
         imageCount: 25
     },
     "kaushalya-graduation": {
         title: "Kaushalya's Graduation",
-        description: "A curated collection of beautifully captured portraits and landscape shots celebrating Kaushalya’s remarkable academic milestone.",
         basePath: "Photography/Albums/Graduations/Kaushalya's Graduation/",
         imageCount: 25
     },
     "tharuka-graduation": {
         title: "Tharuka's Graduation",
-        description: "A curated collection of beautifully captured portraits and landscape shots celebrating Tharuka’s remarkable academic milestone.",
         basePath: "Photography/Albums/Graduations/Tharuka's Graduation/",
         imageCount: 31
     },
     "rasari-graduation": {
         title: "Rasari's Graduation",
-        description: "A curated collection of beautifully captured portraits and landscape shots celebrating Rasari’s remarkable academic milestone.",
         basePath: "Photography/Albums/Graduations/Rasari's Graduation/",
         imageCount: 32
     },
     "annes-batch": {
         title: "Anne's Batch Photo Day",
-        description: "A collection of portraits capturing Anne on her special photo day.",
         basePath: "Photography/Albums/Graduations/Anne's Batch Photo Day/",
         imageCount: 17
     },
     "ai-driven": {
         title: "AI Driven",
-        description: "An inspiring showcase of how artificial intelligence is transforming modern business strategies, innovation, and collaboration in the corporate world.",
         basePath: "Photography/Albums/Events/AI Driven/",
         imageCount: 20
     },
 
     "mathaka-handiya": {
         title: "Mathaka Handiya",
-        description: "A soulful cultural journey capturing the rhythm of nostalgia, vibrant artistry, and the magic of a shared musical experience.",
         basePath: "Photography/Albums/Events/Mathaka Handiya/",
         imageCount: 41
     },
 
     "meghahara": {
         title: "Meghahara",
-        description: "A vibrant cultural event capturing artistic expression, music, and unforgettable moments shared by the audience.",
         basePath: "Photography/Albums/Events/Meghahara/",
         imageCount: 18
     },
 
     "echoes-of-holi": {
         title: "Echoes of Holi",
-        description: "A colorful celebration filled with joy, tradition, and unity, capturing the spirit of Holi through lively moments.",
         basePath: "Photography/Albums/Events/Echoes of Holi/",
         imageCount: 20
     },
 
     "convocation": {
         title: "Convocation",
-        description: "A formal academic ceremony celebrating achievement, pride, and the beginning of new professional journeys.",
         basePath: "Photography/Albums/Events/Convocation/",
         imageCount: 22
     },
 
     "after-glow": {
         title: "After Glow",
-        description: "An energetic post-event celebration capturing vibrant lights, music, and unforgettable nighttime moments.",
         basePath: "Photography/Albums/Events/After Glow/",
         imageCount: 28
     }
@@ -169,6 +158,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---
     // SCRIPT FOR: index.html (Homepage)
     // ---
+
+    // Navbar Scroll Behavior
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
 
     // Mobile Menu Toggle
     const menuToggle = document.getElementById('menu-toggle');
